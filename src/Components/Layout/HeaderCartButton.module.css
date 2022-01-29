@@ -1,0 +1,93 @@
+.button{
+    width: 3%;
+    background: none;
+    border: none;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+.icon{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.badge{
+    position: absolute;
+    right:9.5%;
+    top: 15%;
+    background: red;
+    border-radius: 100%;
+    padding: 2px 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@media only screen and (max-width: 1320px){
+    .button{
+        width: 4%;
+    }
+
+}
+@media only screen and (max-width: 1120px){
+    .button{
+        width: 5%;
+    }
+}
+@media only screen and (max-width: 780px){
+    .button{
+        width: 6%;
+    }
+}
+@media only screen and (max-width: 630px){
+    .button{
+        width: 7%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .button{
+        width: 8%;
+        padding-top: 2px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .button{
+        width: 9%;
+        padding-top: 2px;
+    }
+    .badge{
+        right:9%;
+    }
+}
+@media only screen and (max-width: 350px){
+    .button{
+        width: 11%;
+        padding-top: 2px;
+    }
+}

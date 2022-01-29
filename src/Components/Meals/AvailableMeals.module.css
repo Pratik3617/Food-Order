@@ -1,0 +1,45 @@
+.meals {
+    max-width: 80rem;
+    width: 80%;
+    padding:10px;
+    animation: meals-appear 1s ease-out forwards;
+    position: absolute;
+    top: 72%;
+    left: 10%;
+}
+
+.meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@media only screen and (max-width: 800px){
+    .meals{
+      margin-top:5%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+  .meals{
+    margin-top:12%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .meals{
+    margin-top:17%;
+  }
+}
